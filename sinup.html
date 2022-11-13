@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Sinup Page
+        </title>
+        <style>
+            #sign{
+               text-align: center;
+               width:30%;
+               height:90%;
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+               margin: auto;
+               margin-top:5px;
+               padding:20px;
+            }
+            #sign img{
+                width:150px;
+                height:150px;
+            }
+            #sign button{
+                margin-top:10px;
+                margin-bottom: 10px;
+                border:0px;
+                background-color: white;
+            }
+            #sign>form{
+                width:100%;
+                height:60%;
+            }
+            #sign>form>input{
+                margin-bottom: 20px;
+                height:10%;
+                width:70%;
+                border: 0px;
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sign">
+         <p>Get 15% Good Points back on every order</p>
+         <img src="logofile.jpg"><br>
+         <button>Sign In</button>
+         <a id="in" href="signin.html"><button>Log In</button></a><br>
+         <form id="form">
+            <input id="email" placeholder="E-mail" type="email"><br>
+            <input id="name" placeholder="Full Name" ><br>
+            <input id="pass" placeholder="password"  type="password"><br>
+            <button type="submit" value="Submit">Submit</button>
+         </form>
+        </div>
+    </body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myfun)
+    let arr=JSON.parse(localStorage.getItem("jpass"))||[]
+    function myfun(event){
+        event.preventDefault();
+        let iemail=document.querySelector("#email").value
+        let iname=document.querySelector("#name").value
+        let ipass=document.querySelector("#pass").value
+        let obj={
+            iemail,
+            ipass
+        }
+        arr.push(obj)
+         if((iemail=="")||(iname=="")||(ipass=="")){
+             alert("Invalid Input")
+         }else{
+           localStorage.setItem("jpass",JSON.stringify(arr))
+           opensignup()
+         }
+        }
+        function opensignup(){
+            document.getElementById('in').click();
+    alert("Click Here To Log In")
+        }
+    </script>

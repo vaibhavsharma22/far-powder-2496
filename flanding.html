@@ -24,12 +24,12 @@
         </div>
         <div class="nav2">
              <div>
-                <img src="">
+                <img src="logofile.jpg">
                 <input placeholder="🔍 Find Lipstick, Eyeliner, Makeup Tutorial etc.">
              </div>
              <div>
                <a  href="shop.html"><img src="https://www.shareicon.net/data/128x128/2016/07/09/119077_basket_512x512.png"></a> 
-                <a href="shop.html"><img src="https://static.thenounproject.com/png/3359356-200.png"></a>
+                <a href="sinup.html"><img src="https://static.thenounproject.com/png/3359356-200.png"></a>
              </div>
         </div>
           <div class="nav3">
@@ -47,7 +47,7 @@
 
         <div class="mid">
           <div class="mid1">
-            <img src="https://files.myglamm.com/site-images/original/Homepage-desktop---1920-x-527.png" alt="mid1">
+            <img name="slides">
           </div>
           <div class="mid2">
             <img src="https://files.myglamm.com/site-images/original/Sleek-Desktop---2240-x-614_3.png">
@@ -393,8 +393,54 @@
           </div>
           </div>
 
+          <div class="bb">
+            <div>
+                <p>SUBSCRIBE FOR ONFLICK EMAILS</p>
+                <P>EXPERIENCE THE MYGLAMM MOBILE APP</P>
+            </div>
+            <div>
+                <div>
+                    <input type="text">
+                    <button>SUBSCRIBE NOW</button>
+                </div>
+                <div>
+                    <h5>STAY CONNECTED</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/128/2504/2504918.png">
+                     <img  src="https://t4.ftcdn.net/jpg/01/15/63/37/240_F_115633770_eW4YFq7wORcielto9JPDsqAKys7Y54HZ.jpg">
+                    <img  src="https://cdn-icons-png.flaticon.com/128/1377/1377257.png">
+                    <img  src="https://t3.ftcdn.net/jpg/01/15/63/48/240_F_115634854_0vTMwTjr7qBw9mf9cviyoRuOBPl8YrfP.jpg">
+                </div>
+                
+                <div>
+                    <img src="https://files.myglamm.com/site-images/original/iosStore.png">
+                     <img src="https://files.myglamm.com/site-images/original/playStore.png">
+                </div>
+            </div>
+          </div>
+
        </div>
            
 
   </body>
 </html>
+<script>
+  var i=0;
+  var images=[];
+  var time=5000;
+
+  images[0]="https://files.myglamm.com/site-images/original/KV1920x527_2.jpg"
+  images[1]="https://files.myglamm.com/site-images/original/Carousel-Desktop---1920-527.jpg"
+  images[2]="https://files.myglamm.com/site-images/original/Manish-Malhotra-1920.gif"
+  images[3]="https://files.myglamm.com/site-images/original/Pose-HD-1920.jpeg"
+
+function changeImg(){
+  document.slides.src=images[i];
+  if(i<images.length-1){
+    i++;
+  }else{
+    i=0;
+  }
+setTimeout("changeImg()", time);
+}
+window.onload=changeImg;
+</script>
