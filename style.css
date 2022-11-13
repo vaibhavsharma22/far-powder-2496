@@ -1,0 +1,202 @@
+.nav1{
+display:flex;
+justify-content: space-between;
+background-color:#fee8e8;
+padding:0px 30px;
+}
+.nav1>div:nth-child(1){
+    display:flex;
+justify-content:flex-start;
+}
+.nav1>div:nth-child(2){
+    display:flex;
+justify-content:flex-end;
+}
+.nav1>div{
+width:50%;
+ height:35px;
+ align-items: center;
+}
+.nav1>div>img{
+  width:20px;
+  height:20px;
+  margin-right:10px;
+}
+.nav1>div:nth-child(1)>a{
+    margin-left: 30px;
+    color: #ff9797;
+    text-decoration: none;
+}
+.nav1>div:nth-child(2)>a{
+    text-decoration: none;
+    color:black;
+}
+.nav2{
+    display:flex;
+    justify-content: space-between;
+    height:50px;
+   align-items: center;
+   margin-top: 20px;
+    }
+    .nav2>div{
+        display:flex;
+        justify-content: space-between;
+        padding:0px 2px;
+        height:50px;
+       align-items: center;
+        }
+    .nav2>div:nth-child(2)>a:nth-child(2) img{
+        width:30px;
+        height:30px;
+        margin-right:50px;
+        border-left:1px solid grey ;
+        
+      }
+      .nav2>div:nth-child(2)>a:nth-child(1) img{
+        width:50px;
+        height:50px;
+      }
+      .nav2 input{
+        height:80%;
+        width:600px;
+        border:0px;
+        background-color: #e1f0f4;
+        border: none;
+      }
+      .nav2>div:nth-child(1)>img{
+           width:80px;
+           height:80px;
+           margin-left: 100px;
+           margin-right: 50px;
+      }
+     
+      .nav3{
+          display:flex;
+          justify-content: flex-start;
+          align-items: center;
+      }
+      .nav3>a{
+        margin-left: 35px;
+        text-decoration: none;
+        color:black;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: small;
+      }
+      .mid1,.mid2,.mid3,.mid4{
+        text-align: center;
+        width:100%;
+        height:40%;
+      }
+      .mid1>img,.mid3>img{
+        width:100%;
+      }
+      .mid2>img{
+        width:95%;
+        height: 100%;
+        margin-top: 70px;
+      }
+     .mid4>div{
+         width:100%;
+         display: flex;
+         justify-content: space-between;
+         text-align: center;
+     }
+     .mid4>div>div{
+        width:31%;
+        height:100%;
+     }
+     .mid4 img {
+        width:100%;
+     }
+     .mid4{
+        margin-top: 70px;
+     }
+     .mid5{
+        margin-top:40px;
+        padding:5px;
+     }
+     .mid6>div>div{
+        width:10%;
+     }
+     .mid>div{
+        justify-content: space-around;
+     }
+     .mid7>div>div{
+        width:48%;
+     }
+     .mid8{
+        text-align: center;
+        margin-top: 50px;
+     }
+     .mid8>div{
+        display:flex;
+        justify-content: space-around;
+        width:100%;
+        height:50%;
+     }
+     .mid8>div>div{
+        width:23%;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     }
+     .mid8>div>div>img{
+        width:100%;
+     }
+     .vid{
+        width:100%;
+        margin-top:20px;
+     }
+     .vid>video{
+        width:100%;
+     }
+     .bottom{
+     text-align: center;
+      display:flex;
+      width:100%;
+      justify-content: space-between;
+     }
+     .bottom>div{
+        width:100%;
+        flex-direction: column;
+        text-align: left;
+     }
+     .bottom a{
+        text-decoration: none;
+        color:black
+     }
+     .bb{
+        width:100%;
+        height:20%;
+     }
+     .bb>div{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .bb>div>div{
+        width:30%;
+        height:100%;
+        display:flex;
+        align-items: center;
+     }
+     .bb>div>div:nth-child(2)>img{
+        width:30px;
+        height:30px;
+        margin-left:10px;
+     }
+     .bb>div>div:nth-child(3)>img{
+        width:150px;
+        height:50px;
+        margin-left:50px;
+     }
+     .bb input{
+        margin-left: 20px;
+        height:30px;
+        width:70%;
+     }
+     .bb button{
+       background-color: black;
+       color: white;
+     }
